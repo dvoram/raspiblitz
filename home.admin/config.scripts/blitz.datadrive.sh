@@ -108,7 +108,7 @@ if [ "$1" = "status" ]; then
       # count partitions
       testpartitioncount=0
       if [ ${#testdevice} -gt 0 ]; then
-        testpartitioncount=$(sudo fdisk -l | grep /dev/$testdevice | wc -l)
+        testpartitioncount=$(sudo lsblk -l | grep $testdevice | wc -l)
         # do not count line with disk info
         testpartitioncount=$((testpartitioncount-1))
       fi
