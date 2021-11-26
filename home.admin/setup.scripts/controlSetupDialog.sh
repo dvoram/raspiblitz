@@ -203,6 +203,7 @@ if [ "${setupPhase}" == "setup" ]; then
     elif [ "${userChoice}" == "3" ]; then
     
       # Formatting is skipped. Nothing to do.
+      echo "Formatting of datadisk is skipped."
       # TODO: Format the single partition instead.
 
     else
