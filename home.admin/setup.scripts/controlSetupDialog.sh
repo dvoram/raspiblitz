@@ -200,6 +200,11 @@ if [ "${setupPhase}" == "setup" ]; then
         echo "network=bitcoin" >> $SETUPFILE
       fi
 
+    elif [ "${userChoice}" == "3" ]; then
+    
+      # Formatting is skipped. Nothing to do.
+      # TODO: Format the single partition instead.
+
     else
 
       # STOP SETUP  - loop back to setup menu start
